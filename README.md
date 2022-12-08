@@ -5,6 +5,15 @@
 ## **Introducción al proyecto.**
 Este proyecto consiste en la creacion de una api que nos permita acceder a una base de datos referida a peliculas de diversas plataformas de streaming por medio de cuatro consultas predeterminadas. Para permitir su fácil utilización todo ello se realizo dentro de un entorno de Docker. 
 
+## **Modo de uso.**
+
+Luego de clonar el repertorio, realizar los siguientes comandos:
+
+* docker build -t myimage .
+* docker run -d --name mycontainer -p 80:80 myimage
+
+Luego podra utilizar la api accediendo a http://localhost:80/docs 
+
 ## **Etapas del proyecto.**
 
 <hr>  
@@ -31,8 +40,8 @@ Por último, el proyecto cuenta con los archivos Dockerfile y requirements para 
 
 ## **Herramientas utilizadas.**
 
-* Vs Code
+* Vs Code.
 * Python( pandas, numpy, sqlalchemy, fastapy).
 * Jupyter Notebook.
-* Docker
-* Sqlite
+* Docker.
+* Sqlite.
