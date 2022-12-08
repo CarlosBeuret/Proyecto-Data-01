@@ -5,7 +5,7 @@
 ## **Introducción al proyecto.**
 Este proyecto consiste en la creacion de una api que nos permita acceder a una base de datos referida a peliculas de diversas plataformas de streaming por medio de cuatro consultas predeterminadas. Para permitir su fácil utilización todo ello se realizo dentro de un entorno de Docker. 
 
-## **Modo de uso.**
+## **Modo de utilización.**
 
 Luego de clonar el repertorio, realizar los siguientes comandos:
 
