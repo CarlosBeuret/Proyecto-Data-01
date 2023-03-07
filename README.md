@@ -7,7 +7,7 @@ Este proyecto consiste en la creacion de una api que nos permita acceder a una b
 
 ## **Modo de utilización.**
 
-Luego de clonar el repertorio, realizar los siguientes comandos:
+Luego de clonar el repositorio, realizar los siguientes comandos:
 
 * docker build -t myimage .
 * docker run -d --name mycontainer -p 80:80 myimage
