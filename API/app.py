@@ -2,6 +2,7 @@
 
 from fastapi import FastAPI,  APIRouter
 from routes.movies import movies
+from routes.users import user
 
 
 
@@ -16,7 +17,7 @@ app = FastAPI(
 )
 
 app.include_router(movies)
-
+app.include_router(user)
 
 
 

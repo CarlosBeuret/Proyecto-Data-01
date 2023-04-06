@@ -8,5 +8,10 @@ engine = create_engine(url=Database_URL)
 
 conn = engine.connect()
 
+mysql_URL ="mysql+pymysql://root:root@localhost:3306/users"
+engine_mysql = create_engine(url=Database_URL)
+
+conn_mysql = engine.connect()
+
 # crea una instancia de MetaData
 meta = MetaData()
