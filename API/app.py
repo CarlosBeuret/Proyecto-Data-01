@@ -1,13 +1,8 @@
 # Importamos librerias
 
-from fastapi import FastAPI,  APIRouter
+from fastapi import FastAPI
 from routes.movies import movies
 from routes.users import user
-
-
-
-
-
 
 # Definimos la app.
 app = FastAPI(
