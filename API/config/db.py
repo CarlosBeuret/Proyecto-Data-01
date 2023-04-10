@@ -1,7 +1,7 @@
 
 from sqlalchemy import create_engine, MetaData
 
-Database_URL ="sqlite:///../Database/database.db"
+Database_URL ="sqlite:///Database/database.db"
 engine = create_engine(url=Database_URL)
 
 conn = engine.connect()
