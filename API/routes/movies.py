@@ -3,7 +3,6 @@ from fastapi.responses import JSONResponse
 from config.db import engine, conn
 import pandas as pd
 from sqlalchemy import MetaData, Table, Column, update, String, Integer, create_engine
-
 from schemas.movies import Movies
 
 movies = APIRouter()
