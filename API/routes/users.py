@@ -3,6 +3,7 @@ from config.db import conn_mysql
 from models.users import users
 from schemas.user import User
 from cryptography.fernet import Fernet
+from fastapi.encoders import jsonable_encoder
 
 key = Fernet.generate_key()
 f = Fernet(key)
@@ -17,9 +18,6 @@ def get_users():
     users_list = [dict(zip(columns, row)) for row in result.fetchall()]
     return users_list
 
-@user.get('/get_user/', tags=['User'])
-def get_user(id: int):
-    return conn_mysql.execute(users.select().where(users.c.id == id))
 
 
 @user.post('/create_users/', tags=['User'])
