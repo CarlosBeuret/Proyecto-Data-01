@@ -34,8 +34,8 @@ Luego se trasladaron valores mal ingestados de la columna "rating" a la columna 
 No se eliminaron las columnas que no se usan, porque en los terminos del trabajo no se especifico (desde un punto de vista teorico) si estas debían ser utilizadas en el futuro o por otras personas y por ello se decidió conservarlas.
 Por ultimo se guardo la información resultante en el archivo  Database. Se eligió sqlite porque dada su simpleza nos pareció el mas adecuado para el proyecto.
 #### **Creacion de la API y entorno de Docker**
-De acuerdo a lo solicitado se utilizaron las librerias de uvicorn y fastapi. 
-En cuanto a la Api, la encontramos en la carpeta con el mismo nombre y en el archivo main. Esta consta de cuatro consultas predefinidas que previo ingresar ciertos parametros devuelven los valores solicitados desde nuestra base de datos.
+Se realiazo una app y para ello se utilizaron las librerias de uvicorn y fastapi. 
+En cuanto a la Api, la encontramos en la carpeta con el mismo nombre. Esta utiliza diferentes métodos (get, post, delete y put) en la carpeta routes y en los archivos users y movies. Se conecta a dos bases de datos una de sqlite y la otra de MySql en la carpeta config y el archivo db.py. Para facilitar su funcionamiento tambien se creo la tabla users desde el archivo users.py en la carpeta models y la clase User desde el archivo user.py en la carpeta schemas.
 Por último, el proyecto cuenta con los archivos Dockerfile y requirements para crear la imagen y permitir su sencilla utilizacion por otras personas. 
 
 ## **Herramientas utilizadas.**
